@@ -1,0 +1,51 @@
+
+                    /* top header */
+.header {
+  background-color: black;
+  color: white;
+}
+
+                    /* banner */
+.banner {
+  background-image: url("../img/moto.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25rem;
+}
+
+.jumbotron {
+  background-color: black;
+  color: white;
+  width: 20rem;
+  padding-top: 9rem;
+}
+
+
+                     /* nav */
+nav {
+  background-color: firebrick;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+                      /* content */
+.content {
+  display: flex;
+}
+
+                      /* footer */
+footer {
+  background-color: black;
+  color: white;
+  height: 5rem;
+  text-align: left;
+}
