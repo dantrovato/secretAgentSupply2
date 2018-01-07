@@ -1,8 +1,26 @@
+html {
+  font-size: 18px;
+}
+
+.site-container {
+  width: 960px;
+  margin: auto;
+}
 
                     /* top header */
 .header {
   background-color: black;
   color: white;
+}
+
+.header img {
+  height: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+.header span {
+  display: inline-block;
+  padding: 0.66rem 1rem 0.66rem 0.5rem;
 }
 
                     /* banner */
@@ -11,6 +29,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
   height: 25rem;
 }
 
@@ -18,7 +37,8 @@
   background-color: black;
   color: white;
   width: 20rem;
-  padding-top: 9rem;
+  position: relative;
+  top: 9rem;
 }
 
 
