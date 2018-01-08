@@ -1,5 +1,6 @@
 html {
   font-size: 18px;
+  font-family: Helvetica;
 }
 
 .site-container {
@@ -7,21 +8,29 @@ html {
   margin: auto;
 }
 
-                    /* top header */
-.header {
+.black-background {
   background-color: black;
   color: white;
 }
 
+                    /* top header */
+
+.inner-header {
+  display: flex;
+  align-items: center;
+}
+
 .header img {
   height: 1.5rem;
-  padding-left: 0.5rem;
+  padding: 0.66rem 0 0.66rem 0.5rem;
 }
 
 .header span {
   display: inline-block;
-  padding: 0.66rem 1rem 0.66rem 0.5rem;
+  padding: 0.66rem 0 0.66rem 1rem;
 }
+
+
 
                     /* banner */
 .banner {
@@ -36,9 +45,25 @@ html {
 .jumbotron {
   background-color: black;
   color: white;
-  width: 20rem;
+  width: 26rem;
   position: relative;
   top: 9rem;
+  font-weight: bold;
+}
+
+.jumbotron span {
+  display: inline-block;
+  font-size: 1rem;
+  padding-top: 2rem;
+  padding-left: 3rem;
+}
+
+.jumbotron h1 {
+  font-size: 2rem;
+  padding-left: 3rem;
+  padding-bottom: 1rem;
+  padding-top: 0.25rem;
+  line-height: 40px;
 }
 
 
@@ -49,7 +74,9 @@ nav {
 
 nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 nav a {
@@ -62,10 +89,114 @@ nav a {
   display: flex;
 }
 
+.columns-container {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+/*
+.column {
+  border: 4px solid black;
+  width: 30%;
+}
+*/
+.column2 {
+  border: 4px solid black;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.items-container2 {
+  height: 9rem;
+  width: 9rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.span2 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  text-align: center;
+  width: 100%
+}
+
+.glasses {
+  padding-top: 2rem;
+}
+
+
+
+
+/*
+
+                        previous css- was rubbish 
+
+.items-outer-case {
+  display: inline-flex;
+  flex-direction: column;
+
+}
+
+.span {
+  padding: 0.75rem;
+  text-align: center;
+  min-width: 100%;
+}
+
+.outer-images-container {
+  height: 13rem;
+  width: auto;
+  border: 1px solid purple;
+}
+
+.inner-images-container {
+  max-height: 9rem;
+  width: 9rem;
+  border: 1px solid green;
+}
+
+.inner-images-container span {
+  display: inline-block;
+  width: 100%;
+}
+
+*/
+.items {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+.location-hours {
+  display: flex; justify-content: space-between;
+}
+
+.location, .hours {
+  display: inline-flex;
+  flex-direction: column;
+  width: 35%;
+  margin-top:  3rem;
+}
+
+.location span, .hours span {
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.digits {
+  margin-bottom: 3rem;
+}
+
                       /* footer */
 footer {
   background-color: black;
   color: white;
-  height: 5rem;
+  height: 10rem;
   text-align: left;
+  display: flex;
+  align-items: center;
 }

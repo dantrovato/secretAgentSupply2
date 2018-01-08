@@ -10,8 +10,8 @@
   <body>
 
     <!-- john heder -->
-    <div class="header">
-      <div class="site-container">
+    <div class="header black-background">
+      <div class="site-container inner-header">
         <img src="./resources/img/logo.png" />
         <span>SECRET AGENT SUPPLY INC.</span>
       </div>
@@ -29,7 +29,7 @@
 
     <!-- nav -->
     <nav>
-      <ul>
+      <ul class="site-container">
         <li><a href="#">Eyewear</a></li>
         <li><a href="#">Apparel</a></li>
         <li><a href="#">Gadgets</a></li>
@@ -41,34 +41,80 @@
 
     <!-- happy (content) -->
     <div class="content">
-      <div class="site-container">
-        <div>
-          <div>
-            <img src="./resources/img/pen.png" />
-            <span>Exploding Pen</span>
+      <div class="site-container columns-container">
+
+      <div class="column2">
+        <div class="items-container2">
+          <img class="items"src="./resources/img/pen.png" />
+        </div>
+        <span class="black-background span2">Exploding Pen</span>
+      </div>
+
+      <div class="column2">
+        <div class="items-container2">
+          <img class="items"src="./resources/img/watch.png" />
+        </div>
+        <span class="black-background span2">Cellular Watch</span>
+      </div>
+
+      <div class="column2">
+        <div class="items-container2">
+          <img class="items glasses" src="./resources/img/glasses.png" />
+        </div>
+        <span class="black-background span2">Thermal Glasses</span>
+      </div>
+
+
+<!--
+        <div class="column">
+
+          <div class="items-outer-case">
+            <div class="outer-images-container">
+              <div class="inner-images-container">
+                <img class="items"src="./resources/img/pen.png" />
+              </div>
+            </div>
+            <span class="black-background span">Exploding Pen</span>
           </div>
-          <div>
-            <span>Location</span>
-            <span>-47345778492873</span>
+
+        </div>
+
+        <div class="column">
+          <div class="items-outer-case">
+            <div class="outer-images-container">
+              <div class="inner-images-container">
+                <img class="items" src="./resources/img/watch.png" />
+              </div>
+            </div>
+            <span class="black-background span">Cellular Watch</span>
           </div>
         </div>
 
-        <div>
-          <div>
-            <img src="./resources/img/watch.png" />
-            <span>Cellular Watch</span>
+        <div class="column">
+          <div class="items-outer-case">
+            <div class="outer-images-container">
+              <div class="inner-images-container">
+                <img class="items" src="./resources/img/glasses.png" />
+              </div>
+            </div>
+            <div class="span">
+              <span class="black-background span">Thermal Glasses</span>
+            </div>
           </div>
         </div>
+-->
+      </div>
+    </div>
 
-        <div>
-          <div>
-            <img src="./resources/img/glasses.png" />
-            <span>Thermal Glasses</span>
-          </div>
-          <div>
-            <span>Hours</span>
-            <span>-47345778492873</span>
-          </div>
+    <div class="site-container">
+      <div class="location-hours">
+        <div class="location">
+          <span class="black-background">Location</span>
+          <span class="digits">-47345778492873</span>
+        </div>
+        <div class="hours">
+          <span class="black-background">Hours</span>
+          <span class="digits">-47345778492873</span>
         </div>
       </div>
     </div>
