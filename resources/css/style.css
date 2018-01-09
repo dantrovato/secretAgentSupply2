@@ -68,25 +68,47 @@ html {
 
 
                      /* nav */
-nav {
+.main-nav {
   background-color: firebrick;
 }
 
-nav ul {
+.main-nav ul {
   display: flex;
   justify-content: space-between;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
 
-nav a {
+.main-nav a {
   color: white;
   text-decoration: none;
 }
 
+.alt-nav {
+  display: none;
+  background-color: firebrick;
+}
+
+.alt-nav ul {
+  display: none;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.alt-nav a {
+  display: none;
+  color: white;
+  text-decoration: none;
+}
                       /* content */
 .content {
   display: flex;
+}
+
+.alt-content {
+  display: none;
 }
 
 .columns-container {
@@ -95,12 +117,7 @@ nav a {
   justify-content: space-between;
   margin-top: 3rem;
 }
-/*
-.column {
-  border: 4px solid black;
-  width: 30%;
-}
-*/
+
 .column2 {
   border: 4px solid black;
   width: 30%;
@@ -127,43 +144,6 @@ nav a {
   padding-top: 2rem;
 }
 
-
-
-
-/*
-
-                        previous css- was rubbish 
-
-.items-outer-case {
-  display: inline-flex;
-  flex-direction: column;
-
-}
-
-.span {
-  padding: 0.75rem;
-  text-align: center;
-  min-width: 100%;
-}
-
-.outer-images-container {
-  height: 13rem;
-  width: auto;
-  border: 1px solid purple;
-}
-
-.inner-images-container {
-  max-height: 9rem;
-  width: 9rem;
-  border: 1px solid green;
-}
-
-.inner-images-container span {
-  display: inline-block;
-  width: 100%;
-}
-
-*/
 .items {
   max-width: 100%;
   max-height: 100%;
@@ -199,4 +179,52 @@ footer {
   text-align: left;
   display: flex;
   align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-nav ul a {
+    display: none;
+  }
+
+  .main-nav ul {
+    display: none;
+  }
+
+  .main-nav a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .alt-nav {
+    display: block;
+  }
+
+  .alt-nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .alt-nav a {
+    display: inline-block;
+
+    color: white;
+    text-decoration: none;
+  }
+
+  .content {
+    display: none;
+  }
+
+  .alt-content {
+    display: flex;
+  }
+
+  .column2 {
+    width: 47%;
+  }
+
+  footer div {
+    text-align: center;
+  }
+
 }
