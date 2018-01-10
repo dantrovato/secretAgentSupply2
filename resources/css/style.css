@@ -107,7 +107,7 @@ html {
   display: flex;
 }
 
-.alt-content {
+.alt-content, .alt-content2 {
   display: none;
 }
 
@@ -225,6 +225,84 @@ footer {
 
   footer div {
     text-align: center;
+  }
+
+}
+
+@media only screen and (max-width: 470px) {
+
+  .banner {
+    height: 15rem;
+  }
+
+  .jumbotron {
+
+    top: 10rem;
+  }
+
+  .inner-header {
+  }
+
+  .jumbotron span {
+    display: inline-block;
+    font-size: 0.77rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+  }
+
+  .jumbotron h1 {
+    font-size: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 0.10rem;
+    padding-top: 0.25rem;
+    line-height: 40px;
+  }
+
+                /* container */
+
+  .container-mobile-size-screen {
+    justify-content: center;
+  }
+
+  .watch {
+    display: none;
+  }
+
+  .pen-mobile-size-screen {
+    width: 90%;
+  }
+
+  .location-hours {
+    flex-direction: column;
+
+  }
+
+  .site-container {
+    width: 470px;
+  }
+
+  .location, .hours {
+    justify-content: center;
+    width: 85%;
+    padding-left: 1rem;
+  }
+
+  .location span, .hours span {
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .hours {
+    margin-top: 0.5rem;
+  }
+
+  .digits {
+    margin-bottom: 0;
+  }
+
+  footer {
+    margin-top: 3rem;
   }
 
 }
